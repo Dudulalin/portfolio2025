@@ -1,0 +1,28 @@
+.nav {
+    //background-color: red;
+    height: 10vh;
+    top: 3%;
+    width: 95vw;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    margin-left: 1.5%;
+
+
+
+    & img {
+        width: 8%;
+
+        &.logo {
+            justify-self: flex-start;
+        }
+
+        &.bar {
+            justify-self: flex-end;
+        }
+    }
+}

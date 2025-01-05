@@ -1,0 +1,14 @@
+@use './partials_scss/color';
+@use './partials_scss/font';
+@use './partials_scss/header';
+@use './partials_scss/about';
+@use './partials_scss/projects';
+@use './partials_scss/button';
+@use './partials_scss/service';
+
+body {
+    background: linear-gradient(to bottom, var(--dark-green) , var(--green-olive));
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+  }

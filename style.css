@@ -1,1 +1,218 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --dark-green: #10180D;
+  --green-olive: #42421F;
+  --brown: #786842;
+  --bright-green: #A6A655;
+  --fadded-green: #3E3F27;
+  --light-corn: #DADD94;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "header";
+  src: url("../media/font/Poltawski_Nowy/PoltawskiNowy-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "regular";
+  src: url("../media/font/Roboto_Flex/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf") format("truetype");
+}
+.number {
+  font-family: "header";
+  font-size: 200px;
+}
+
+.title_letter {
+  font-family: "header";
+  font-size: 350px;
+}
+
+h1 {
+  font-family: "header";
+  font-size: 150px;
+}
+
+h2 {
+  font-family: "header";
+  font-size: 128px;
+}
+
+h3 {
+  font-family: "header";
+  font-size: 64px;
+}
+
+p {
+  font-family: "regular";
+  font-size: 40px;
+}
+
+.nav {
+  height: 10vh;
+  top: 3%;
+  width: 95vw;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  margin-left: 1.5%;
+}
+.nav img {
+  width: 8%;
+}
+.nav img.logo {
+  justify-self: flex-start;
+}
+.nav img.bar {
+  justify-self: flex-end;
+}
+
+.about {
+  width: 100vw;
+  position: relative;
+}
+.about--box {
+  margin-inline: auto auto;
+  margin-block: 20vh 10vh;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 0.4fr 0.7fr;
+  grid-template-rows: 0.5fr 0.8fr 0.5fr 0.5fr;
+  grid-column-gap: 35px;
+  grid-row-gap: 0px;
+}
+.about--box--title {
+  margin: 0;
+  grid-area: 1/2/2/3;
+  color: var(--brown);
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.about--box--text {
+  margin: 0;
+  width: 63%;
+  grid-area: 2/2/3/3;
+  color: var(--brown);
+  justify-self: flex-end;
+  text-align: right;
+  align-self: center;
+}
+.about--box--button {
+  margin: 0;
+  width: 40%;
+  height: 60%;
+  grid-area: 3/2/4/3;
+  justify-self: flex-end;
+}
+.about--box--social_media {
+  margin-top: 10px;
+  grid-area: 4/2/5/3;
+  align-self: flex-start;
+}
+.about--box--picture {
+  grid-area: 1/1/5/2;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+}
+
+.projects {
+  margin-top: 20vh;
+  position: relative;
+  width: 100vw;
+}
+.projects--box {
+  margin-inline: auto auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.5fr repeat(3, 0.5fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.projects--box--title {
+  grid-area: 1/1/2/2;
+  width: 70%;
+  color: var(--bright-green);
+  margin-left: 50%;
+  margin-top: 20%;
+  text-align: center;
+  z-index: 1;
+}
+.projects--box--button {
+  grid-area: 1/2/2/3;
+  height: 10%;
+  width: 70%;
+}
+.projects--box--aurorae {
+  grid-area: 1/3/2/4;
+  width: 200%;
+  align-self: flex-end;
+  margin-left: -110%;
+}
+.projects--box--text {
+  grid-area: 1/4/2/5;
+  text-align: end;
+  margin-left: -65%;
+  margin-top: 10%;
+  width: 110%;
+  color: var(--brown);
+}
+.projects--box--chaos {
+  grid-area: 2/3/3/5;
+  width: 80%;
+  margin-top: -10%;
+}
+.projects--box--confort {
+  grid-area: 3/2/4/4;
+  width: 90%;
+  margin-top: -20%;
+}
+.projects--box--flhmlq {
+  grid-area: 4/1/5/3;
+  width: 50%;
+  margin-top: -10%;
+  margin-left: 20%;
+}
+
+button {
+  border: solid 2px var(--white);
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 40px;
+  font-family: "regular";
+  color: var(--white);
+}
+
+.services--box {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.services--box--title {
+  grid-area: 1/1/6/2;
+  color: var(--bright-green);
+}
+.services--box--first {
+  grid-area: 1/4/2/5;
+}
+.services--box--second {
+  grid-area: 2/2/3/3;
+}
+.services--box--third {
+  grid-area: 3/3/4/4;
+}
+.services--box--fourth {
+  grid-area: 4/3/5/4;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--dark-green), var(--green-olive));
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100vw;
+}/*# sourceMappingURL=style.css.map */

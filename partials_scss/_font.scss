@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "header";
+    src: url("../media/font/Poltawski_Nowy/PoltawskiNowy-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("../media/font/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf") format("truetype");
+}
+
+.number{
+    font-family: "header";
+    font-size: 200px;
+}
+
+.title_letter{
+    font-family: "header";
+    font-size: 350px;
+}
+
+h1{
+    font-family: "header";
+    font-size: 150px;
+}
+
+h2{
+    font-family: "header";
+    font-size: 128px;
+}
+
+h3{
+    font-family: "header";
+    font-size: 64px;
+}
+
+p{
+    font-family: "regular";
+    font-size: 40px;
+}

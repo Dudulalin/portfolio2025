@@ -1,0 +1,57 @@
+.about {
+    width: 100vw;
+    position: relative;
+
+    &--box {
+        margin-inline: auto auto;
+        margin-block: 20vh 10vh;
+        //background-color: aquamarine;
+        width: 70%;
+        display: grid;
+        grid-template-columns: 0.4fr 0.7fr;
+        grid-template-rows: 0.5fr 0.8fr 0.5fr 0.5fr;
+        grid-column-gap: 35px;
+        grid-row-gap: 0px;
+
+        &--title {
+            margin: 0;
+            grid-area: 1 / 2 / 2 / 3;
+            color: var(--brown);
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+
+        &--text {
+            margin: 0;
+            width: 63%;
+            grid-area: 2 / 2 / 3 / 3;
+            color: var(--brown);
+            justify-self: flex-end;
+            text-align: right;
+            align-self: center;
+
+        }
+
+        &--button {
+            margin: 0;
+            width: 40%;
+            height: 60%;
+            grid-area: 3 / 2 / 4 / 3;
+            justify-self: flex-end;
+        }
+
+        &--social_media {
+            margin-top: 10px;
+            grid-area: 4 / 2 / 5 / 3;
+            align-self: flex-start;
+        }
+
+        &--picture {
+            grid-area: 1 / 1 / 5 / 2;
+            width: 90%;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+}
