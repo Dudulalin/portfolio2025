@@ -1,4 +1,5 @@
 .services {
+    margin-top: -10%;
     &--box {
         display: grid;
         grid-template-columns: 0.5fr repeat(2, 1fr);
@@ -8,11 +9,7 @@
 
         &--title {
             grid-area: 1 / 1 / 5 / 2;
-            color: var(--bright-green);
-            display: inline-block;
-            transform: rotate(90deg); // Rotates the text by 90 degrees
-            transform-origin: left top; // Ensures the rotation starts from the top-left corner
-            white-space: nowrap;
+            z-index: 1;
         }
 
         &--first {
