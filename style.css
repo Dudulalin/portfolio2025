@@ -23,7 +23,7 @@
 
 .title_letter {
   font-family: "header";
-  font-size: 350px;
+  font-size: 150px;
 }
 
 h1 {
@@ -196,6 +196,7 @@ button {
 .services--box--title {
   grid-area: 1/1/6/2;
   color: var(--bright-green);
+  transform: rotate(180deg);
 }
 .services--box--first {
   grid-area: 1/4/2/5;
