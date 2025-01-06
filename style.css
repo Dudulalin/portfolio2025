@@ -19,6 +19,7 @@
 .number {
   font-family: "header";
   font-size: 200px;
+  color: var(--fadded-green);
 }
 
 .title_letter {
@@ -187,27 +188,61 @@ button {
 }
 
 .services {
-  margin-top: -10%;
+  position: relative;
+  margin-top: 15%;
+  width: 100vw;
+  height: 300vh;
 }
 .services--box {
   display: grid;
   grid-template-columns: 0.5fr repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 0.8fr repeat(3, 0.5fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  width: 100%;
+}
+.services--box h2:nth-child(2) {
+  color: var(--brown);
+  font-size: 100px;
 }
 .services--box--title {
   grid-area: 1/1/5/2;
   z-index: 1;
+  width: 100%;
+  margin-top: -120%;
 }
 .services--box--first {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
   grid-area: 1/3/2/4;
+}
+.services--box--first--number {
+  margin-top: -4%;
+}
+.services--box--first--skill {
+  margin-top: 5%;
+  margin-left: -5%;
 }
 .services--box--second {
   grid-area: 2/2/3/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.services--box--second--number {
+  justify-self: flex-end;
+}
+.services--box--second--skill {
+  justify-self: flex-start;
 }
 .services--box--third {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
   grid-area: 3/2/4/4;
 }
 .services--box--fourth {

@@ -1,10 +1,10 @@
-@use './partials_scss/color';
-@use './partials_scss/font';
-@use './partials_scss/header';
-@use './partials_scss/about';
-@use './partials_scss/projects';
-@use './partials_scss/button';
-@use './partials_scss/service';
+@use './partials_scss/color.scss';
+@use './partials_scss/font.scss';
+@use './partials_scss/header.scss';
+@use './partials_scss/about.scss';
+@use './partials_scss/projects.scss';
+@use './partials_scss/button.scss';
+@use './partials_scss/service.scss';
 
 body {
     background: linear-gradient(to bottom, var(--dark-green) , var(--green-olive));
