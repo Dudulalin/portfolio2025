@@ -6,4 +6,11 @@ button{
     font-size: 40px;
     font-family: "regular";
     color: var(--white);
+    letter-spacing: 10px;
+
+    &:hover{
+        background-color: var(--brown);
+        border: solid 3px var(--dark-green);
+        color: var(--dark-green);
+    }
 }

@@ -1,5 +1,5 @@
 .projects {
-    margin-top: 20vh;
+    margin-top: 20%;
     position: relative;
     width: 100vw;
 
@@ -17,9 +17,9 @@
             grid-area: 1 / 1 / 2 / 2;
             width: 70%;
             color: var(--bright-green);
-            margin-left: 50%;
+            margin-left: 45%;
             margin-top: 20%;
-            text-align: center;
+            text-align: left;
             z-index: 1;
         }
         
@@ -39,9 +39,9 @@
         &--text{
             grid-area: 1 / 4 / 2 / 5;
             text-align: end;
-            margin-left: -65%;
-            margin-top: 10%;
-            width: 110%;
+            margin-left: -53%;
+            margin-top: 26%;
+            width: 100%;
             color: var(--brown);
         }
         

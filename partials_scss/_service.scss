@@ -2,15 +2,20 @@
     position: relative;
     margin-top: 15%;
     width: 100vw;
-    height: 300vh;
+    height: 200vh;
+    padding-right: 5%;
+    //background-color: red;
 
     &--box {
         display: grid;
-        grid-template-columns: 0.5fr repeat(2, 1fr);
-        grid-template-rows: 0.8fr repeat(3, 0.5fr);
+        grid-template-columns: 0.7fr repeat(3, 1fr);
+        grid-template-rows: repeat(4, 15vh);
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row-gap: 40vh;
         width: 100%;
+        height: 200vh;
+        //background-color: aqua;
+        
 
         & h2:nth-child(2) {
             color: var(--brown);
@@ -20,10 +25,78 @@
         &--title {
             grid-area: 1 / 1 / 5 / 2;
             z-index: 1;
-            width: 100%;
+            width: 80%;
             margin-top: -120%;
         }
 
+        &--first {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-inline: auto auto;
+            grid-area: 1 / 4 / 2 / 5; 
+
+            &--number{
+                margin-left: -40%;
+            }
+
+            &--skill{
+                margin-left: -8%;
+                margin-top: 40%;
+            }
+
+        }
+
+        &--second {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-inline: auto auto;
+            grid-area: 2 / 2 / 3 / 4; 
+
+            &--skill{
+                margin-left: -90%;
+                margin-top: 30%;
+            }
+
+            &--number{
+                margin-left: 60%;
+            }
+            
+
+        }
+
+        &--third {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-inline: auto auto;
+            grid-area: 3 / 3 / 4 / 5;
+
+            &--skill{
+                margin-left: -90%;
+                margin-top: 30%;
+            }
+
+            &--number{
+                margin-left: 60%;
+            }
+        }
+
+        &--fourth {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-inline: auto auto;
+            grid-area: 4 / 2 / 5 / 5; 
+
+            &--skill{
+                margin-top: -5%;
+                margin-left: -7%;
+            }
+        }
+
+        /*
         &--first {
             display: flex;
             flex-direction: row;
@@ -44,17 +117,19 @@
         }
 
         &--second {
-            grid-area: 2 / 2 / 3 / 3;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: stretch;
+            grid-area: 2 / 2 / 3 / 3;
+            
             &--number {
-                justify-self: flex-end;
+                margin-left: 90%;
             }
 
             &--skill {
-                justify-self: flex-start;
+                margin-top: 20%;
+                margin-left: -53%;
             }
 
         }
@@ -69,7 +144,7 @@
 
         &--fourth {
             grid-area: 4 / 2 / 5 / 4;
-        }
+        }*/
     }
 
 
