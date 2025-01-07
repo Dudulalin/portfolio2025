@@ -25,8 +25,11 @@
         
         &--button {
             grid-area: 1 / 2 / 2 / 3;
-            height: 10%;
-            width: 70%;
+            height: 8%;
+            width: 55%;
+            justify-self: center;
+            margin-left: -10%;
+            margin-top: 8%;
         }
         
         &--aurorae {

@@ -7,10 +7,16 @@
 @use './partials_scss/service.scss';
 @use './partials_scss/contact.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(to bottom, var(--dark-green) , var(--green-olive));
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
   }
