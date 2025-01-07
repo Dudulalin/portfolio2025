@@ -21,6 +21,24 @@ burgerMenu.addEventListener('click', () => {
     navMenu.classList.toggle('open');
 });
 
+const menuLinks = document.querySelectorAll('.nav-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default anchor behavior
+                const targetId = link.getAttribute('href').substring(1); // Get target section ID
+                const targetSection = document.getElementById(targetId);
+
+                // Scroll smoothly to target section
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close the menu after clicking
+                burgerMenu.classList.remove('open');
+                navMenu.classList.remove('open');
+            });
+        });
+        
 //-------------------------------------cv button-----------------------------------
 const btnCv = document.querySelector(".cv-button");
 

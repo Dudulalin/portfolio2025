@@ -29,7 +29,7 @@
             display: block;
             height: 6px;
             width: 90%;
-            background-color: var(--fadded-green);
+            background-color: var(--brown);
             transition: all 0.5s ease;
         }
 
@@ -68,8 +68,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: var(--egg);
-        color: white;
+        background-color: var(--light-corn);
         
         flex-direction: column;
         align-items: center;
@@ -95,7 +94,7 @@
             & a {
                 text-decoration: none;
                 color: var(--bright-green);
-                font-size: 150px;
+                font-size: 170px;
                 font-family: "header";
                 margin-left: 7%;
                 transition: color 0.3s;
