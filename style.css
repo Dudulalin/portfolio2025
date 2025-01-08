@@ -482,6 +482,10 @@ button:hover {
   margin-top: -10%;
 }
 
+.app:hover {
+  fill: var(--egg);
+}
+
 * {
   margin: 0;
   padding: 0;
