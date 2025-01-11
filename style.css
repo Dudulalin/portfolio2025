@@ -212,14 +212,17 @@ p {
 }
 .about--box--social_media--mail {
   margin-bottom: 5%;
-  width: 30%;
+  width: 3vw;
 }
 .about--box--social_media--linkedin {
   margin-bottom: 5%;
-  width: 30%;
+  width: 3vw;
 }
 .about--box--social_media--behance {
-  width: 30%;
+  width: 3vw;
+}
+.about--box--social_media--behance:hover {
+  fill: red;
 }
 .about--box--picture {
   grid-area: 1/1/6/2;
@@ -300,9 +303,9 @@ button {
   letter-spacing: 10px;
 }
 button:hover {
-  background-color: var(--brown);
-  border: solid 3px var(--dark-green);
-  color: var(--dark-green);
+  border: solid 3px var(--bright-green);
+  color: var(--bright-green);
+  font-weight: 400;
 }
 
 .services {
@@ -482,8 +485,8 @@ button:hover {
   margin-top: -10%;
 }
 
-.app:hover {
-  fill: var(--egg);
+.about svg:hover {
+  fill: red;
 }
 
 * {

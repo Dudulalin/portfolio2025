@@ -56,16 +56,19 @@
 
             &--mail {
                 margin-bottom: 5%;
-                width: 30%;
+                width: 3vw;
             }
 
             &--linkedin {
                 margin-bottom: 5%;
-                width: 30%;
+                width: 3vw;
             }
 
             &--behance {
-                width: 30%;
+                width: 3vw;
+                &:hover{
+                    fill: red;
+                }
             }
         }
 

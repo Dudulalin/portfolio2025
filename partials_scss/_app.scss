@@ -1,5 +1,7 @@
-.app{
-    &:hover{
-        fill: var(--egg);
+.about {
+    & svg {
+        &:hover {
+            fill: red;
+        }
     }
 }
