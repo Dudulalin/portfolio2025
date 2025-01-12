@@ -1,7 +1,9 @@
-.about {
-    & svg {
-        &:hover {
-            fill: red;
-        }
+.app {
+    fill: var(--khaki);
+    transition: fill 0.3s ease;
+   
+    & path:hover {
+        fill: var(--brown);
+
     }
 }

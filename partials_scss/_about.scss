@@ -52,22 +52,19 @@
             flex-direction: column;
             grid-area: 1 / 2 / 4 / 3;
             margin-left: 5%;
+            width: 100%;
 
+            & svg{
+                align-self: flex-start;
+                width: 40%;
+                margin: -50% 0 0 0;
 
-            &--mail {
-                margin-bottom: 5%;
-                width: 3vw;
-            }
+                &:nth-child(2){
+                    margin: -95% 0 0 0;
+                }
 
-            &--linkedin {
-                margin-bottom: 5%;
-                width: 3vw;
-            }
-
-            &--behance {
-                width: 3vw;
-                &:hover{
-                    fill: red;
+                &:nth-child(3){
+                    margin: -95% 0 0 0;
                 }
             }
         }

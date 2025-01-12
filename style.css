@@ -1,5 +1,6 @@
 :root {
   --dark-green: #10180D;
+  --khaki: #8F8E49;
   --green-olive: #42421F;
   --brown: #786842;
   --bright-green: #A6A655;
@@ -209,20 +210,18 @@ p {
   flex-direction: column;
   grid-area: 1/2/4/3;
   margin-left: 5%;
+  width: 100%;
 }
-.about--box--social_media--mail {
-  margin-bottom: 5%;
-  width: 3vw;
+.about--box--social_media svg {
+  align-self: flex-start;
+  width: 40%;
+  margin: -50% 0 0 0;
 }
-.about--box--social_media--linkedin {
-  margin-bottom: 5%;
-  width: 3vw;
+.about--box--social_media svg:nth-child(2) {
+  margin: -95% 0 0 0;
 }
-.about--box--social_media--behance {
-  width: 3vw;
-}
-.about--box--social_media--behance:hover {
-  fill: red;
+.about--box--social_media svg:nth-child(3) {
+  margin: -95% 0 0 0;
 }
 .about--box--picture {
   grid-area: 1/1/6/2;
@@ -485,8 +484,12 @@ button:hover {
   margin-top: -10%;
 }
 
-.about svg:hover {
-  fill: red;
+.app {
+  fill: var(--khaki);
+  transition: fill 0.3s ease;
+}
+.app path:hover {
+  fill: var(--brown);
 }
 
 * {
